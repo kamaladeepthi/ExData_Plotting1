@@ -7,7 +7,7 @@ subsetdata <- data[data$Date %in% c("1/2/2007","2/2/2007"),]
 # Convert Date and Time variables to Date/Time classes
 datetime <- strptime(paste(subsetdata$Date,subsetdata$Time),"%d/%m/%Y %H:%M:%S")
 
-# Corece the character object to numeric
+# Coerce the character object to numeric
 globalactivepower <- as.numeric(subsetdata$Global_active_power)
 
 # Plot the graph

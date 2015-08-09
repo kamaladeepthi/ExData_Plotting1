@@ -7,7 +7,7 @@ subsetdata <- data[data$Date %in% c("1/2/2007","2/2/2007"),]
 # Convert Date and Time variables to Date/Time classes
 datetime <- strptime(paste(subsetdata$Date,subsetdata$Time),"%d/%m/%Y %H:%M:%S")
 
-# Corece character objects to numeric
+# Coerce character objects to numeric
 globalactivepower <- as.numeric(subsetdata$Global_active_power)
 globalreactivepower <- as.numeric(subsetdata$Global_reactive_power)
 voltage <- as.numeric(subsetdata$Voltage)

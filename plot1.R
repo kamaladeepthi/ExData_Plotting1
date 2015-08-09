@@ -4,7 +4,7 @@ data <- read.csv(dataFile, sep=";",stringsAsFactors = FALSE,dec=".")
 # Subset data based on two dates
 subsetdata <- data[data$Date %in% c("1/2/2007","2/2/2007"),]
 
-# Corece the character object to numeric
+# Coerce the character object to numeric
 globalactivepower <- as.numeric(subsetdata$Global_active_power)
 
 # Plot the graph
